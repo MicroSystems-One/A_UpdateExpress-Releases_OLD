@@ -1,21 +1,11 @@
-# Update Express Releases
+# Update Express Releases (legacy)
 
-Public update channel for **Update Express** (MicroSystems).
+**Superseded.** The public update channel now lives on:
 
-The private source repository is separate. Customer computers read only this public channel.
+https://github.com/MicroSystems-One/UpdateExpress
 
-## latest.json
+Clients should read:
 
-Clients check:
+`https://raw.githubusercontent.com/MicroSystems-One/UpdateExpress/main/latest.json`
 
-`https://raw.githubusercontent.com/BlackAdder5/UpdateExpress-Releases/main/latest.json`
-
-| Field | Purpose |
-|---|---|
-| `version` | Newest available application version |
-| `publishedAt` | UTC publish time |
-| `releaseNotes` | Short notes shown to the technician |
-| `downloadUrl` | HTTPS link opened when the user chooses download |
-| `sha256` | Reserved for Phase 2 integrity checks |
-
-Phase 1 only **checks** for updates. Installation/replacement is not performed by the client yet.
+This repository remains as a bridge for older clients that still hardcode the former Releases URL. `latest.json` here mirrors the new channel.
